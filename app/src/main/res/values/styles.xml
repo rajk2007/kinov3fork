@@ -1,11 +1,11 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. Material3 -->
     <style name="AppTheme" parent="Theme.Material3.Dark.NoActionBar">
-        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:windowBackground">@color/kino_black</item>
         <item name="android:colorEdgeEffect">?attr/textColor</item>
 
-        <item name="android:navigationBarColor">?attr/primaryBlackBackground</item>
-        <item name="android:statusBarColor">?attr/iconGrayBackground</item>
+        <item name="android:navigationBarColor">@color/kino_black</item>
+        <item name="android:statusBarColor">@color/kino_black</item>
 
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowTranslucentNavigation">false</item>
@@ -50,9 +50,9 @@
         <!--<item name="preferenceTheme">@style/PreferencesTheme</item>-->
 
         <!-- DEF STYLE -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">#E50914</item>
+        <item name="colorPrimaryDark">#080808</item>
+        <item name="colorAccent">#7B2FBE</item>
         <item name="textColor">@color/textColor</item>
         <item name="colorOnPrimary">@color/whiteText</item>
         <item name="grayTextColor">@color/grayTextColor</item>
@@ -235,10 +235,10 @@
     </style>
 
     <style name="OverlayPrimaryColorNormal">
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimary">#E50914</item>
         <item name="android:colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryDark">#080808</item>
+        <item name="colorAccent">#7B2FBE</item>
         <item name="colorOnPrimary">@color/whiteText</item>
         <!-- Needed for leanback fuckery -->
         <item name="android:colorAccent">@color/colorAccent</item>
@@ -591,7 +591,7 @@
         <item name="android:windowTranslucentStatus">false</item>
 
         <item name="android:windowIsFloating">false</item>
-        <item name="android:navigationBarColor">?attr/primaryBlackBackground</item>
+        <item name="android:navigationBarColor">@color/kino_black</item>
         <item name="android:statusBarColor">?attr/primaryBlackBackground</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m">?attr/isLightTheme</item>
     </style>
@@ -612,7 +612,7 @@
         <!-- No backgrounds, titles or window float -->
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsFloating">false</item>
-        <item name="android:navigationBarColor">?attr/primaryBlackBackground</item>
+        <item name="android:navigationBarColor">@color/kino_black</item>
     </style>
 
     <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
