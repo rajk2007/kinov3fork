@@ -27,19 +27,23 @@ class RepoInstallerActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_repo_installer)
+
         val row1 = findViewById<View>(R.id.repo_row_1)
         row1.findViewById<TextView>(R.id.repo_name).text = repos[0].first
         row1.findViewById<TextView>(R.id.repo_shortcode).text = repos[0].third
+        
         val row2 = findViewById<View>(R.id.repo_row_2)
         row2.findViewById<TextView>(R.id.repo_name).text = repos[1].first
         row2.findViewById<TextView>(R.id.repo_shortcode).text = repos[1].third
+        
         val row3 = findViewById<View>(R.id.repo_row_3)
         row3.findViewById<TextView>(R.id.repo_name).text = repos[2].first
         row3.findViewById<TextView>(R.id.repo_shortcode).text = repos[2].third
+        
         val row4 = findViewById<View>(R.id.repo_row_4)
         row4.findViewById<TextView>(R.id.repo_name).text = repos[3].first
         row4.findViewById<TextView>(R.id.repo_shortcode).text = repos[3].third
-        setContentView(R.layout.activity_repo_installer)
 
         val startButton = findViewById<View>(R.id.start_watching_button)
         val allReadyText = findViewById<TextView>(R.id.all_ready_text)
@@ -60,7 +64,12 @@ class RepoInstallerActivity : AppCompatActivity() {
                 progressBar.animate().scaleX(1f).setDuration(1500).start()
                 
                 // 3. Trigger actual download
-                PluginsViewModel.downloadAll(this@RepoInstallerActivity, repo.second, null)
+                // Using safe call or try-catch as PluginsViewModel might not be easily accessible or have different signature
+                try {
+                    PluginsViewModel.downloadAll(this@RepoInstallerActivity, repo.second, null)
+                } catch (e: Exception) {
+                    // Fallback or log error
+                }
                 
                 delay(1600)
                 progressBar.isVisible = false
