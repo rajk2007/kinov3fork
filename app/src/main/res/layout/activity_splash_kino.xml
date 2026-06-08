@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/splash_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#080808">
+
+    <LinearLayout
+        android:id="@+id/wordmark_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/k_letter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="K"
+            android:textColor="#FFFFFF"
+            android:textSize="88sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/ino_letters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INO"
+            android:textColor="#FFFFFF"
+            android:textSize="88sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/red_line"
+        android:layout_width="160dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="#E50914"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/wordmark_layout"
+        app:layout_constraintStart_toStartOf="@id/wordmark_layout"
+        app:layout_constraintTop_toBottomOf="@id/wordmark_layout" />
+
+    <TextView
+        android:id="@+id/by_raj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:letterSpacing="0.3"
+        android:text="by Raj Karmakar"
+        android:textColor="#8A8A8A"
+        android:textSize="13sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/red_line" />
+
+    <TextView
+        android:id="@+id/cinema_redefined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:letterSpacing="0.5"
+        android:text="CINEMA. REDEFINED."
+        android:textColor="#333333"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/by_raj" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
