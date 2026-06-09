@@ -30,4 +30,31 @@
     <color name="ic_launcher_background">#080808</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
+    <!-- CloudStream required colors mapped to Kino theme -->
+    <color name="transparent">#00000000</color>
+    <color name="primaryBlackBackground">#080808</color>
+    <color name="textColor">#F5F5F5</color>
+    <color name="grayTextColor">#8A8A8A</color>
+    <color name="whiteText">#FFFFFF</color>
+    <color name="amoledModeLight">#141414</color>
+    <color name="primaryGrayBackground">#0F0F0F</color>
+    <color name="secondaryGrayBackground">#141414</color>
+    <color name="primaryBlack">#000000</color>
+    <color name="primaryWhite">#FFFFFF</color>
+    <color name="darkText">#080808</color>
+    <color name="lightText">#F5F5F5</color>
+    <color name="errorColor">#E50914</color>
+    <color name="successColor">#00BFA5</color>
+    <color name="warningColor">#F5C518</color>
+    <color name="dividerColor">#1AFFFFFF</color>
+    <color name="rippleColor">#1AE50914</color>
+    <color name="cardBackground">#141414</color>
+    <color name="bottomNavBackground">#F7080808</color>
+    <color name="searchBackground">#1A1A1A</color>
+    <color name="badgeBackground">#E50914</color>
+    <color name="hindiColor">#FF6B35</color>
+    <color name="animeColor">#00BFA5</color>
+    <color name="ratingColor">#F5C518</color>
+    <color name="shadowColor">#80000000</color>
+    <color name="overlayColor">#80000000</color>
 </resources>
