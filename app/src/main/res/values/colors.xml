@@ -80,4 +80,5 @@
     <color name="grayShimmer">#3DFFFFFF</color>
     <color name="gray_200">#EEEEEE</color>
     <color name="gray_400">#BDBDBD</color>
+    <color name="player_on_button_tv_attr">#FFFFFFFF</color>
 </resources>
