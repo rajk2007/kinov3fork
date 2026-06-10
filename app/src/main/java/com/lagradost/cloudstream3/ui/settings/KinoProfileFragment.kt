@@ -1,22 +1,17 @@
 package com.lagradost.cloudstream3.ui.settings
 
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
-import com.lagradost.cloudstream3.databinding.FragmentProfileKinoBinding
-import com.lagradost.cloudstream3.ui.BaseFragment
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import com.lagradost.cloudstream3.R
 
-class KinoProfileFragment : BaseFragment<FragmentProfileKinoBinding>(
-    BindingCreator.Bind(FragmentProfileKinoBinding::bind)
-) {
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        setupUI()
-    }
-
-    private fun setupUI() {
-        binding.apply {
-            // Logic for quality, audio, toggles, etc.
-            // These would normally hook into CloudStream settings/preferences
-        }
+class KinoProfileFragment : Fragment() {
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        return inflater.inflate(R.layout.fragment_home_kino, container, false)
     }
 }

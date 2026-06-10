@@ -1,44 +1,17 @@
 package com.lagradost.cloudstream3.ui.player
 
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
-import com.lagradost.cloudstream3.databinding.FragmentPlayerKinoBinding
-import com.lagradost.cloudstream3.ui.BaseFragment
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import com.lagradost.cloudstream3.R
 
-class KinoPlayerFragment : AbstractPlayerFragment<FragmentPlayerKinoBinding>(
-    BindingCreator.Bind(FragmentPlayerKinoBinding::bind)
-) {
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        setupKinoUI()
+class KinoPlayerFragment : Fragment() {
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        return inflater.inflate(R.layout.fragment_player_kino, container, false)
     }
-
-    private fun setupKinoUI() {
-        binding.apply {
-            // Back button logic
-            backButton.setOnClickListener {
-                activity?.onBackPressed()
-            }
-            
-            // Center controls: Rewind, Play/Pause, Forward
-            // Bottom bar: Progress, CC, Audio, Speed, etc.
-            
-            // Gesture handling is largely managed by PlayerView/PlayerGestureHelper,
-            // but we can add custom overlays here if needed.
-        }
-    }
-
-    override fun nextEpisode() {
-        // Implement next episode logic
-    }
-
-    override fun prevEpisode() {
-        // Implement previous episode logic
-    }
-
-    override fun playerPositionChanged(position: Long, duration: Long) {
-        // Update progress bar and time texts
-    }
-
-    // Other required overrides...
 }

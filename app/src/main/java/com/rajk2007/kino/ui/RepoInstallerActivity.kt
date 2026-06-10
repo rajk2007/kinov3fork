@@ -10,7 +10,7 @@ import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
 import com.lagradost.cloudstream3.MainActivity
 import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.plugins.RepositoryData
+import com.lagradost.cloudstream3.plugins.Repository
 import com.lagradost.cloudstream3.plugins.RepositoryManager
 import com.lagradost.cloudstream3.ui.settings.extensions.PluginsViewModel
 import com.lagradost.cloudstream3.utils.DataStore.setKey
@@ -57,7 +57,7 @@ class RepoInstallerActivity : AppCompatActivity() {
                 val checkmark = row.findViewById<View>(R.id.checkmark)
 
                 // 1. Add repo
-                RepositoryManager.addRepository(RepositoryData(repo.first, repo.second))
+                RepositoryManager.addRepository(Repository(repo.first, repo.second))
                 
                 // 2. Animate progress (simulated as actual download is background)
                 progressBar.isVisible = true
