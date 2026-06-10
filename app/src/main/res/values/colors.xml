@@ -71,4 +71,10 @@
     <color name="unwatchedColor">#40FFFFFF</color>
     <color name="dividerColor">#1FFFFFFF</color>
     <color name="errorColor">#CF6679</color>
+    <color name="dubColorBg">#1A3A6B</color>
+    <color name="subColorBg">#1A4D2E</color>
+    <color name="typeColorBg">#3A1A4D</color>
+    <color name="progressBackgroundColor">#33FFFFFF</color>
+    <color name="video_ripple">#33FFFFFF</color>
+    <color name="skipOpTransparent">#00000000</color>
 </resources>
