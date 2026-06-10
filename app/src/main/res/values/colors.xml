@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Kino Brand Colors -->
     <color name="kinoRed">#E50914</color>
     <color name="kinoBlack">#080808</color>
     <color name="kinoPurple">#7B2FBE</color>
-
-    <!-- App Primary Colors (mapped to Kino red) -->
     <color name="colorPrimary">#E50914</color>
     <color name="colorPrimaryDark">#080808</color>
     <color name="colorAccent">#E50914</color>
-
-    <!-- Theme Variant Primary Colors -->
     <color name="colorPrimaryBlue">#5A6BCB</color>
     <color name="colorPrimaryPurple">#7125DB</color>
     <color name="colorPrimaryGreen">#39C1AE</color>
@@ -30,73 +25,50 @@
     <color name="colorPrimaryDandelionYellow">#F5BB00</color>
     <color name="colorPrimaryCoolBlue">#51b0d7</color>
     <color name="colorPrimaryLavender">#7961B4</color>
-
-    <!-- Core Backgrounds -->
     <color name="primaryGrayBackground">#2B2C30</color>
     <color name="primaryBlackBackground">#111111</color>
     <color name="iconGrayBackground">#1C1C20</color>
     <color name="boxItemBackground">#161616</color>
-
-    <!-- Text Colors -->
     <color name="textColor">#FFFFFFFF</color>
     <color name="whiteText">#FFFFFFFF</color>
     <color name="blackText">#FF000000</color>
     <color name="grayTextColor">#99FFFFFF</color>
     <color name="iconColor">#FFFFFFFF</color>
-
-    <!-- Light Theme Colors -->
     <color name="lightPrimaryGrayBackground">#F0F0F0</color>
     <color name="lightBitDarkerGrayBackground">#E0E0E0</color>
     <color name="lightGrayBackground">#F5F5F5</color>
     <color name="lightItemBackground">#FFFFFF</color>
     <color name="lightTextColor">#FF000000</color>
     <color name="lightGrayTextColor">#99000000</color>
-
-    <!-- Dracula Theme Colors -->
     <color name="DraculaPrimaryGrayBackground">#282A36</color>
     <color name="DraculaBitDarkerGrayBackground">#1E1F29</color>
     <color name="DraculaGrayBackground">#343746</color>
     <color name="DraculaItemBackground">#252637</color>
     <color name="DraculaTextColor">#F8F8F2</color>
     <color name="DraculaIconColor">#BD93F9</color>
-
-    <!-- Silent Blue Theme Colors -->
     <color name="SilentBluePrimaryGrayBackground">#1E2A3A</color>
     <color name="SilentBlueBitDarkerGrayBackground">#161F2C</color>
     <color name="SilentBlueGrayBackground">#253447</color>
     <color name="SilentBlueItemBackground">#1A2534</color>
     <color name="SilentBlueTextColor">#E8EEF4</color>
     <color name="SilentBlueIconColor">#5B9BD5</color>
-
-    <!-- Lavender Theme Colors -->
     <color name="LavenderPrimaryGrayBackground">#F3F0FF</color>
     <color name="LavenderBitDarkerGrayBackground">#E8E3FF</color>
     <color name="LavenderGrayBackground">#F8F5FF</color>
     <color name="LavenderItemBackground">#FFFFFF</color>
     <color name="LavenderTextColor">#2D1B69</color>
     <color name="LavenderIconColor">#7B2FBE</color>
-
-    <!-- Amoled Mode -->
     <color name="amoledModeLight">#0A0A0A</color>
-
-    <!-- Basics -->
     <color name="white">#FFFFFFFF</color>
     <color name="black">#FF000000</color>
     <color name="transparent">#00000000</color>
     <color name="black_transparent">#99000000</color>
     <color name="shadow">#80000000</color>
     <color name="overlay">#66000000</color>
-
-    <!-- Primary White (referenced in styles/layouts) -->
     <color name="primaryWhite">#FFFFFFFF</color>
-
-    <!-- Misc UI -->
     <color name="ratingColor">#FFD700</color>
     <color name="watchedColor">#80E50914</color>
     <color name="unwatchedColor">#40FFFFFF</color>
     <color name="dividerColor">#1FFFFFFF</color>
     <color name="errorColor">#CF6679</color>
-    <color name="black_button_ripple">#33FFFFFF</color>
-    <color name="video_button_ripple">#33FFFFFF</color>
-    <color name="white_transparent_toggle">#33FFFFFF</color>
 </resources>
