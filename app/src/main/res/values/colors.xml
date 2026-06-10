@@ -6,6 +6,20 @@
     <color name="colorOngoing">#F53B66</color> <!--FF8181-->
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#3b65f5</color> <!-- 818fff-->
+    
+    <color name="primaryWhite">#FFFFFF</color>
+    <color name="primaryBlack">#000000</color>
+    <color name="primaryBlackBackground">#080808</color>
+    <color name="primaryGrayBackground">#141414</color>
+    <color name="secondaryGrayBackground">#1A1A1A</color>
+    <color name="textColor">#F5F5F5</color>
+    <color name="grayTextColor">#8A8A8A</color>
+    <color name="iconColor">#F5F5F5</color>
+    <color name="iconGrayBackground">#1A1A1A</color>
+    <color name="boxItemBackground">#141414</color>
+    <color name="whiteText">#FFFFFF</color>
+    <color name="darkText">#080808</color>
+    <color name="lightText">#F5F5F5</color>
 
     <color name="primaryGrayBackground">#2B2C30</color> <!--0f0f10 0E0E10 303135 2B2C30-->
     <color name="primaryBlackBackground">#111111</color> <!--1C1C20 191a1f 19181E 202125 1C1C20-->
