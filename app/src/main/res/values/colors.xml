@@ -78,4 +78,6 @@
     <color name="video_ripple">#33FFFFFF</color>
     <color name="skipOpTransparent">#00000000</color>
     <color name="grayShimmer">#3DFFFFFF</color>
+    <color name="gray_200">#EEEEEE</color>
+    <color name="gray_400">#BDBDBD</color>
 </resources>
