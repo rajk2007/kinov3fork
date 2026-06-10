@@ -80,4 +80,7 @@
     <color name="grayShimmer">#3DFFFFFF</color>
     <color name="gray_200">#EEEEEE</color>
     <color name="gray_400">#BDBDBD</color>
+    <color name="black_overlay">#99000000</color>
+    <color name="darkBar">#CC000000</color>
+    <color name="videoProgress">#E50914</color>
 </resources>
