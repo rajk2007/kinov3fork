@@ -45,4 +45,45 @@
     <style name="RoundedImageView">
         <item name="android:background">@color/primaryGrayBackground</item>
     </style>
+    <style name="ResultInfoText">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="textColor">?attr/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">24dp</item>
+        <item name="android:minWidth">0dp</item>
+    </style>
+
+    <style name="ContinueWatchingPlayUnderlayProgress">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">4dp</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="trackColor">@color/transparent</item>
+        <item name="indicatorColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="ContinueWatchingCircularProgress">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="trackColor">@color/transparent</item>
+        <item name="indicatorColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="DownloadHeaderPlayUnderlayProgress">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">4dp</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="trackColor">@color/transparent</item>
+        <item name="indicatorColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="DownloadHeaderCircularProgress">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="trackColor">@color/transparent</item>
+        <item name="indicatorColor">?attr/colorPrimary</item>
+    </style>
 </resources>

@@ -77,4 +77,5 @@
     <color name="progressBackgroundColor">#33FFFFFF</color>
     <color name="video_ripple">#33FFFFFF</color>
     <color name="skipOpTransparent">#00000000</color>
+    <color name="grayShimmer">#3DFFFFFF</color>
 </resources>
