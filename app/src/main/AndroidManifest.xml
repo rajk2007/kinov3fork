@@ -110,15 +110,7 @@
             </intent-filter>
         </receiver>
 
-        <activity
-            android:name="com.rajk2007.kino.ui.SplashActivity"
-            android:exported="false"
-            android:theme="@style/Theme.CloudStream.NoActionBar" />
-
-        <activity
-            android:name="com.rajk2007.kino.ui.RepoInstallerActivity"
-            android:exported="false"
-            android:theme="@style/Theme.CloudStream.NoActionBar" />
+        
 
         <activity
             android:name=".MainActivity"
