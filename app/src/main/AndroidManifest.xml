@@ -163,8 +163,6 @@
             android:exported="false"
             android:theme="@style/Theme.CloudStream.NoActionBar" />
 
-
-
         <activity
             android:name=".ui.SubtitlesFragment"
             android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|keyboard|keyboardHidden"
