@@ -1,38 +1,58 @@
 package com.rajk2007.kino.ui
 
-import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.lagradost.cloudstream3.MainActivity
+import com.lagradost.cloudstream3.plugins.RepositoryManager
+import com.lagradost.cloudstream3.ui.settings.extensions.RepositoryData
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
-class RepoInstallerActivity : Activity() {
+class RepoInstallerActivity : AppCompatActivity() {
 
     companion object {
-        private val REPO_URLS = listOf(
+        val REPOS = listOf(
             "https://raw.githubusercontent.com/self-similarity/MegaRepo/builds/repo.json",
             "https://raw.githubusercontent.com/recloudstream/extensions/master/repo.json",
             "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/refs/heads/builds/repo.json",
             "https://raw.githubusercontent.com/SaurabhKaperwan/CSX/builds/CS.json"
         )
+        const val PREF_REPOS_INSTALLED = "kino_repos_installed"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        try {
-            val prefs = getSharedPreferences("kino_prefs", MODE_PRIVATE)
-            if (!prefs.getBoolean("repos_installed", false)) {
-                prefs.edit()
-                    .putStringSet("pending_repos", REPO_URLS.toSet())
-                    .putBoolean("repos_installed", true)
-                    .apply()
+
+        val prefs = getSharedPreferences("kino_prefs", MODE_PRIVATE)
+        val alreadyInstalled = prefs.getBoolean(PREF_REPOS_INSTALLED, false)
+
+        if (!alreadyInstalled) {
+            CoroutineScope(Dispatchers.IO).launch {
+                try {
+                    REPOS.forEach { url ->
+                        try {
+                            val name = url.split("/").getOrNull(3) ?: "Repository"
+                            RepositoryManager.addRepository(RepositoryData(name, url))
+                        } catch (e: Exception) {
+                            e.printStackTrace()
+                        }
+                    }
+                    prefs.edit().putBoolean(PREF_REPOS_INSTALLED, true).apply()
+                } catch (e: Exception) {
+                    e.printStackTrace()
+                } finally {
+                    goToMain()
+                }
             }
-        } catch (e: Exception) {
-            e.printStackTrace()
-        } finally {
-            val intent = Intent(this, MainActivity::class.java)
-            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
-            startActivity(intent)
-            finish()
+        } else {
+            goToMain()
         }
+    }
+
+    private fun goToMain() {
+        startActivity(Intent(this, MainActivity::class.java))
+        finish()
     }
 }
