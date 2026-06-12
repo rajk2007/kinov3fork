@@ -12,6 +12,6 @@ class KinoProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_home_kino, container, false)
+        return inflater.inflate(R.layout.fragment_profile_kino, container, false)
     }
 }
