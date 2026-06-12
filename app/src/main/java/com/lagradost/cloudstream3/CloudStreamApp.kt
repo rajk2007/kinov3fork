@@ -70,6 +70,7 @@ class ExceptionHandler(
 class CloudStreamApp : Application(), SingletonImageLoader.Factory {
 
     override fun onCreate() {
+        Thread.setDefaultUncaughtExceptionHandler(KinoCrashHandler(this))
         super.onCreate()
         // If we want to initialize Coil as early as possible, maybe when
         // loading an image or GIF in a splash screen activity.
